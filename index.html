@@ -4,21 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,100 +19,98 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div id="9" class="row task-info">
-        <div class="col-1 hour my-auto">9:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="10" class="row task-info">
-        <div class="col-1 hour my-auto">10:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="11" class="row task-info">
-        <div class="col-1 hour my-auto">11:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="12" class="row task-info future">
-        <div class="col-1 hour my-auto">12:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="13" class="row task-info present">
-        <div class="col-1 hour my-auto">1:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="14" class="row task-info past">
-        <div class="col-1 hour my-auto">2:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="15" class="row task-info">
-        <div class="col-1 hour my-auto">3:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="16" class="row task-info">
-        <div class="col-1 hour my-auto">4:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
-      <div id="17" class="row task-info">
-        <div class="col-1 hour my-auto">5:00</div>
-        <div class="col task"></div>
-        <button
-          class="col-1 saveBtn d-flex justify-content-center align-items-center"
-        >
-          <span class="oi oi-lock-locked"></span>
-        </button>
-      </div>
+    <!-- TIME BLOCKS GO HERE -->
+    <!-- 9AM -->
+    <div class="input-group input-group-lg" data-hour="9">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-9-am"></span>
+        </div>
+        <input type="text" class="form-control form9" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 10AM -->
+    <div class="input-group input-group-lg" data-hour="10">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-10-am"></span>
+        </div>
+        <input type="text" class="form-control form10" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 11AM -->
+    <div class="input-group input-group-lg" data-hour="11">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-11-am"></span>
+        </div>
+        <input type="text" class="form-control form11" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 12PM-->
+    <div class="input-group input-group-lg" data-hour="12">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-12-pm""></span>
+        </div>
+        <input type="text" class="form-control form12" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 1PM-->
+    <div class="input-group input-group-lg" data-hour="1">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-1-pm"></span>
+        </div>
+        <input type="text" class="form-control form1" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 2PM -->
+    <div class="input-group input-group-lg" data-hour="2">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-2-pm"></span>
+        </div>
+        <input type="text" class="form-control form2" aria-label="Large">
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 3PM -->
+    <div class="input-group input-group-lg" data-hour="3">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-3-pm"></span>
+        </div>
+        <input type="text" class="form-control form3" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 4PM -->
+    <div class="input-group input-group-lg" data-hour="4">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-4-pm"></span>
+        </div>
+        <input type="text" class="form-control form4" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 5PM -->
+    <div class="input-group input-group-lg" data-hour="5">
+        <div class="input-group-prepend">
+            <span class="input-group-text time-block time-5-pm"></span>
+        </div>
+        <input type="text" class="form-control form5" aria-label="Large">
+        <!-- FONT AWESOME ICON -->
+        <button class="btn saveBtn"><i class="fas fa-save"></i></button>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./index.js"></script>
-  </body>
+    <script src="./assets/js/script.js"></script>
 </html>
-<!-- <div class="container">
-      
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./index.js"></script>
-  </body>
-</html> -->

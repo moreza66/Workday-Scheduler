@@ -1,0 +1,87 @@
+/* STYLE BODY */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(236, 232, 242);
+  }
+
+  /* TEXT AREA STYLE */
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+
+/* STYLE FOR JUMBOTRON */  
+  .jumbotron {
+    text-align: center;                                                                                               
+    color: rgb(69, 67, 67);
+    border-radius: 0;
+    border-bottom: 10px solid rgb(53, 52, 52);
+  }
+
+ /* STYLE FOR DESCRIPTION */ 
+  .description{
+    white-space: pre-wrap;
+  }
+
+/* STYLE FOR TIMEBLOCK */  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+
+/* STYLE FOR ROW */  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+  }
+
+/* STYLE FOR HOUR */  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+
+/* STYLE FOR PAST TIME */  
+  .past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+
+/* STYLE FOR PRESENT TIME */  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+
+/* STYLE FOR FUTURE TIME */  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+
+/* STYLE FOR SAVE BUTTON */  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(179, 129, 195);
+    color: beige;
+  }
+
+/* STYLE FOR SAVE BUTTON HOVER */  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .time-block {
+    background-color: rgb(179, 125, 194);
+  }
